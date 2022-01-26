@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Scheda anagrafica</legend>
+            <div>
+                <label for="mail">Email:</label>
+                <input type="email" name="" id="mail">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="" id="password"> 
+            </div>
+            <div>
+                <label for="nome completo">Nome e cognome:</label>
+                <input type="text" name="" id="nome completo">
+            </div>
+            <div>
+                <label for="data nascita">Data di nascita:</label>
+                <input type="date" name="" id="data nascita">
+            </div>
+            <div>
+                <label for="numero telefono">Numero di telefono:</label>
+                <input type="tel" name="" id="numero telefono">
+            </div>
+        </fieldset>
+        <div>
+            <label for="piano abbonamento">Piano di abbonamento</label>
+            <select name="" id="piano abbonamento">
+                <optgroup label="abbonamenti">
+                    <option value="free" selected>Piano Free</option>
+                    <option value="lv 1">Abbonamento lv 1</option>
+                    <option value="lv 2">Abbonamento lv 2</option>
+                    <option value="lv 3">Abbonamento lv 3</option>
+                </optgroup>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <label for="vantaggi pro">Vantaggi pro</label>
+            <input type="checkbox" name="" id="vantaggi pro">
+        </div>
+        <fieldset>
+            <legend>Carta di credito</legend>
+            <ul>
+                <li>
+                    <label for="numero carta">Numero carta:</label>
+                    <input type="tel" name="" id="numero carta" inputmode="numeric">
+                </li>
+                <li>
+                    <label for="cvc">CVC:</label>
+                    <input type="tel" name="" id="cvc" inputmode="numeric">
+                </li>
+                <li>
+                    <label for="scadenza">Scadenza:</label>
+                    <input type="month" name="" id="scadenza">
+                </li>
+                <li>
+                    <label for="fatturazione">Indirizzo di fatturazione:</label>
+                    <input type="text" name="" id="fatturazione">
+                </li>
+            </ul>
+        </fieldset>
+        <button type="submit">Registrati</button>
+    </form>
+</body>
+</html>
