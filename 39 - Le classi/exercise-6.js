@@ -21,11 +21,11 @@ class AreaCalculator {
   static calculate(area) {
     console.log(area);
     if (area instanceof Square) {
-      return square.side * square.side;
+      return area.side * area.side;
     } else if (area instanceof Rectangle) {
-      return rectangle.width * rectangle.height;
+      return area.width * area.height;
     } else if (area instanceof Circle) {
-      return circle.radius * circle.radius * 3.14;
+      return area.radius * area.radius * 3.14;
     }
   }
 }
