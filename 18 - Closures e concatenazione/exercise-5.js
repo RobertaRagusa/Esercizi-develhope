@@ -2,10 +2,10 @@ function memoize(fn) {
   let cache = {};
   return (num) => {
     if (num in cache) {
-      console.log("fetch from cache for " + num);
+      console.log("Fetching from cache for " + num);
       return cache[num];
     }
-    console.log("calculate resulte for " + num);
+    console.log("Calculating result for " + num);
     const output = fn(num);
     cache[num] = output;
     return output;
