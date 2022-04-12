@@ -8,8 +8,12 @@ class Person {
   toJson() {
     return JSON.stringify(this);
   }
+  static fromJson(obj) {
+    let { id, firstName, lastName, age } = JSON.parse(obj);
+    return new Person(id, firstName, lastName, age);
+  }
 }
 
 const json = '{"id":1,"firstName":"Mario","lastName":"Rossi","age":25}';
-const developer = JSON.parse(json);
+const developer = Person.fromJson(json);
 console.log(developer);
