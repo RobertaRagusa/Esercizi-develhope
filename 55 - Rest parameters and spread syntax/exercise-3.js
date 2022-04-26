@@ -3,5 +3,5 @@ let newNumber = 3;
 /*numberStore.push(newNumber);
 console.log(numberStore);*/
 
-let Numbers = [...numberStore, newNumber];
-console.log(Numbers);
+let numbers = [...numberStore, newNumber];
+console.log(numbers);
