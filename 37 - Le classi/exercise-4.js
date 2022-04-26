@@ -3,10 +3,10 @@ class BankAccount {
         this.money = money;
     }
     deposit(otherMoney) {
-        return this.money += otherMoney;
+         this.money += otherMoney;
     }
     withdraw(otherMoney) {
-        return this.money -= otherMoney;
+         this.money -= otherMoney;
     }
     view() {
         console.log(this.money);
